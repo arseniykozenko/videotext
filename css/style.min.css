@@ -436,6 +436,35 @@ img {
   width: 16px;
   margin-bottom: 0;
 }
+.header__navbar-hamburger-content {
+  position: absolute;
+  font-family: "Montserrat Medium", sans-serif;
+  font-weight: 500;
+  width: 80%;
+  right: 0;
+  z-index: 992;
+  padding: 47px 0 220px 0;
+  font-size: 24px;
+  line-height: 30px;
+  background-color: rgba(155, 117, 176, 0.76);
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  flex-direction: column;
+  display: none;
+}
+.header__navbar-hamburger-content-link {
+  margin-left: 32px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.header__navbar-hamburger-content-link:first-child {
+  margin-top: 0;
+}
+.header__navbar-hamburger-content.is-active {
+  display: flex;
+}
 
 .main {
   padding: 120px 75px 190px 75px;
