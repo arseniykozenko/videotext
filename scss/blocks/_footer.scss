@@ -1,0 +1,42 @@
+.footer {
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    padding: 35px 0;
+    background-color: $navbar-buttons;
+    &-logo {
+        display: flex;
+        align-items: center;
+        &__text {
+            @include montserratAlternatesMedium;
+            font-size: 40px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+    }
+    &__authors {
+        @include montserratLight;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 22px;
+        margin-left: 40px;
+    }
+    &__polytech-logo {
+        display: flex;
+        flex-basis: 20%;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    &__support-text {
+        @include montserratLight;
+        font-size: 14px;
+        line-height: 22px;
+        color: #ffffff;
+        margin-left: 40px;
+    }
+}

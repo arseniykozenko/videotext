@@ -1,0 +1,93 @@
+@media (min-width: 1199px) and (max-width: 1399px) {
+    .header {
+        &__navbar {
+            &-buttons {
+                margin-right: 0;
+                * {
+                    font-size: 20px;
+                }
+                .about-project, .copybook, .events {
+                    margin-right: 12px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer {
+        .container {
+            max-width: 1060px;
+        }
+        &__authors {
+            margin-left: 20px;
+        }
+    }
+    .header {
+        &__navbar {
+            padding: 20px 10px;
+            justify-content: space-around;
+            &-logo {
+                &-text {
+                    font-size: 35px;
+                }
+            }
+            &-buttons {
+                margin-right: 0;
+                * {
+                    font-size: 16px;
+                }
+                .about-project, .leaders {
+                    padding: 16px 10px;
+                }
+                .copybook, .events {
+                    padding: 16px 12px;
+                }
+                .about-project, .copybook, .events {
+                    margin-right: 5px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        &__navbar {
+            padding: 20px 10px;
+            justify-content: space-around;
+            &-logo {
+                &-text {
+                    font-size: 32px;
+                }
+            }
+            &-buttons {
+                margin-right: 0;
+                * {
+                    font-size: 16px;
+                }
+                .about-project, .leaders {
+                    padding: 16px 8px;
+                }
+                .copybook, .events {
+                    padding: 16px 10px;
+                }
+                .about-project, .copybook, .events {
+                    margin-right: 5px;
+                }
+            }
+        }
+        
+    }
+
+    .footer {
+        .container {
+            max-width: 960px;
+        }
+        &__authors {
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.main {
+    padding: 120px 75px 190px 75px;
+    a {
+        color: rgba(0, 0, 0, 1);
+    }
+    @include montserratLight;
+    line-height: 30px;
+    font-size: 24px;
+    h2 {
+        @include montserratMedium;
+        font-size: 36px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    .project-content {
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__tasks {
+            margin-left: 35px;
+        }
+        &__inspirers {
+            margin-left: 35px;
+           
+        }      
+    }
+    .project-history {
+        margin-bottom: 120px;
+        margin-top: 60px;
+
+    }
+    .project-pictures__first {
+        margin-right: 60px;
+    }
+    .project-pictures__third {
+        margin-top: 66px;
+        margin-bottom: 66px;
+    }
+    .project-pictures__sixth {
+        margin-top: 95px;
+    }
+    .project-membership {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .project-use {
+        margin-top: 40px;
+        &__text {
+            span {
+                font-weight: bold;
+            }
+        }
+        &__use-area {
+            margin-left: 35px;
+        }
+    }
+    .project-publishings {
+        margin-top: 40px;
+        &__list {
+            margin-left: 30px;
+        }
+    }
+    .project-contacts { 
+        margin-top: 40px;
+        &__list {
+            list-style-type: none;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-style: normal;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}

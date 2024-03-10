@@ -1,0 +1,120 @@
+.header {
+    position: relative;
+    // margin-bottom: 120px;
+    &__navbar {
+        // position: fixed;
+        // left: 0;
+        // top: 0;
+        // width: 100%;
+        // z-index: 992;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 10px;
+        background: $navbar-background;
+        &-logo {
+            display: flex;
+            align-items: center;
+            &-text {
+                @include montserratAlternatesMedium;
+                font-size: 40px;
+                font-weight: 500;
+                color: #ffffff;
+                margin-bottom: 5px;
+            }
+        }
+        &-buttons {
+            display: flex;
+            margin-right: 50px;
+            .about-project, .copybook, .events {
+                margin-right: 22px;
+            }
+            * {
+                @include montserratMedium;
+                font-size: 24px;
+                border-style: none;
+                border-radius: 50px;
+                background-color: $navbar-buttons;
+                color: #ffffff;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(95, 37, 128, 0.8);
+                }
+            }
+            .about-project, .leaders {
+                padding: 12px;
+            }
+            .copybook, .events {
+                padding: 12px 24px;
+            }
+        }
+        &-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-account, &-search, &-hamburger {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                border-style: none;
+                background-color: $navbar-buttons;
+                margin-right: 10px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(95, 37, 128, 0.8);
+                }
+            }
+            &-hamburger {
+                flex-direction: column;
+                align-items: center;
+                span {
+                    display: block;
+                    width: 22px;
+                    margin-bottom: 4px;
+                    height: 2.5px;
+                    background-color: #ffffff;
+                    text-align: center;
+                    &:last-child {
+                        margin-left: 5px;
+                        width: 16px;
+                        margin-bottom: 0;
+                    }
+                }
+               
+            }
+        }
+    }
+    &__navbar-hamburger-content {
+        position: absolute;
+        @include montserratMedium;
+        width: 80%;
+        right: 0;
+        z-index: 992;
+        padding: 47px 0 220px 0;
+        font-size: 24px;
+        line-height: 30px;
+        background-color: rgba(155, 117, 176, 0.76);
+        border-bottom-left-radius: 75px;
+        border-bottom-right-radius: 75px;
+        flex-direction: column;
+        display: none;
+        &-link {
+            margin-left: 32px;
+            text-decoration: none;
+            color: #ffffff;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    &__navbar-hamburger-content.is-active {
+        display: flex;
+    }
+    
+}

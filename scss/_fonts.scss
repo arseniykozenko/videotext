@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Montserrat Alternates Medium';
+    src: url('../fonts/MontserratAlternates-Medium.ttf') format('truetype');
+    src: url('../fonts/MontserratAlternates-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MontserratAlternates-Medium.woff') format('woff'),
+    url('../fonts/MontserratAlternates-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.eot');
+    src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Light.woff') format('woff'),
+    url('../fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin montserratAlternatesMedium {
+    font-family: 'Montserrat Alternates Medium', sans-serif;
+    font-weight: 500;
+}
+
+@mixin montserratMedium {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-weight: 500;
+}
+
+@mixin montserratLight {
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 300;
+}
